@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Navbar Styles */
+/* ---------------------------------------Navbar Styles--------------------------------------- */
 .navbar {
   background-color: #333;
   overflow: hidden;
@@ -24,7 +24,7 @@ body {
   color: black;
 }
 
-/* Hero Section Styles */
+/* ---------------------------------------Hero Section Styles--------------------------------------- */
 .hero {
   width: 100%;
 }
@@ -33,7 +33,15 @@ body {
   width: 100%;
 }
 
-/* Main Section Styles */
+
+/* ---------------------------------------article name--------------------------------------- */
+.article-p{
+  padding: 20px;
+  font-size: 3vw;
+}
+
+
+/* ---------------------------------------Main Section Styles--------------------------------------- */
 .main {
   display: flex;
   flex-direction: row;
@@ -53,7 +61,7 @@ body {
 }
 
 .article {
-  display: flex;
+  display: flex;  
   flex-wrap: wrap;
 }
 
@@ -70,9 +78,20 @@ body {
   width: 100%;
   border-radius: 5px;
 }
-@media only screen and (max-width: 425px) {
+
+@media only screen and (max-width: 970px) {
+  .main{
+    justify-content: center;        
+  }
+  .article{
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
   .main {
     flex-direction: column;
+    align-items: center;
   }
 
   .navbar {
@@ -88,6 +107,9 @@ body {
     padding: 8px;
   }
 
+  .article{
+    margin-top: 2rem;
+  }
   .card {
     width: 100%;
   }
